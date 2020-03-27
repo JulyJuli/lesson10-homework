@@ -1,0 +1,6 @@
+D:\ALvlASPNet3Adv\HomeWork10\lesson10-homework\HomeWork10\HomeWork10\bin\Debug\HomeWork10.exe.config
+D:\ALvlASPNet3Adv\HomeWork10\lesson10-homework\HomeWork10\HomeWork10\bin\Debug\HomeWork10.exe
+D:\ALvlASPNet3Adv\HomeWork10\lesson10-homework\HomeWork10\HomeWork10\bin\Debug\HomeWork10.pdb
+D:\ALvlASPNet3Adv\HomeWork10\lesson10-homework\HomeWork10\HomeWork10\obj\Debug\HomeWork10.csprojAssemblyReference.cache
+D:\ALvlASPNet3Adv\HomeWork10\lesson10-homework\HomeWork10\HomeWork10\obj\Debug\HomeWork10.exe
+D:\ALvlASPNet3Adv\HomeWork10\lesson10-homework\HomeWork10\HomeWork10\obj\Debug\HomeWork10.pdb
