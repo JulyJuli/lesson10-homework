@@ -3,10 +3,13 @@
     // Global delegate fields.
     public delegate void MessageHandler(string str);
     public delegate string InputHandler();
+
+
     public static class DelegateHolder
     {
         public static MessageHandler showMessage;
         public static InputHandler readString;
+
 
         public static void SetShowMessageHandler(MessageHandler del)
         {

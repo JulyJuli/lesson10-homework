@@ -36,7 +36,6 @@ namespace Warehouse_library
                 }
             }
         }
-
         public Product(string name, decimal price)
         {
             Name = name;
