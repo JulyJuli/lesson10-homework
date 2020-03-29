@@ -26,9 +26,7 @@ namespace Homework10
                 new Banana(
                     new BaseProduct(DateTime.Now, new TimeSpan(7,0,0,0)),
                     "Banana",
-                    23),
-                new HandCream(new BaseProduct(DateTime.Now, new TimeSpan(20,0,0,0)),"Lambre"),
-                new Paper(new BaseProduct(DateTime.Now, new TimeSpan(80,0,0,0)),"AB")
+                    23), 
 
             };
 
