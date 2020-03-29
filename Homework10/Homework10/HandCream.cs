@@ -2,25 +2,15 @@
 
 namespace Homework10
 {
-    public class HandCream : IThing
+    public class HandCream : Product
     {
-        public HandCream(BaseProduct bp)
+        public HandCream(BaseProduct baseProduct, string productName) :
+            base(productName, 200, baseProduct.CreationDate, 30)
         {
-            BaseProduct = bp;
+            BaseProduct = baseProduct;
             CreationDate = BaseProduct.CreationDate;
         }
-
-        public string Name => "Hand cream";
-
-        public void PrintInfo()
-        {
-            Console.WriteLine(Name);
-        }
-        public double Price => 170;
-
-        public int ShelLife => 20;
         public BaseProduct BaseProduct { get; set; }
-        public DateTime CreationDate { get; set; }
 
     }
 }

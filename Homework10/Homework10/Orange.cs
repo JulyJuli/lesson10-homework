@@ -1,6 +1,6 @@
 ﻿namespace Homework10
 {
-    public class Orange : Warehouse, IThing
+    public class Orange : Product
     {
         public Orange(
             BaseProduct baseProduct,
@@ -10,7 +10,6 @@
         {
             BaseProduct = baseProduct;
         }
-        public override string Name => "Orange";
         public BaseProduct BaseProduct { get; set; }
     }
 }

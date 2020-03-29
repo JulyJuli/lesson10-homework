@@ -1,6 +1,6 @@
 ﻿namespace Homework10
 {
-    public class Bread : Warehouse
+    public class Bread : Product
     {
         public Bread(
             BaseProduct baseProduct,
@@ -10,7 +10,6 @@
         {
             BaseProduct = baseProduct;
         }
-        public override string Name => "Bread";
         public BaseProduct BaseProduct { get; set; }
     }
 }

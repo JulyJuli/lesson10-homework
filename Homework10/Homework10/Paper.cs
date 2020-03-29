@@ -2,23 +2,17 @@
 
 namespace Homework10
 {
-    public class Paper : IThing
+    public class Paper : Product
     {
-        public Paper(BaseProduct bp)
+        public Paper(BaseProduct bp, string productName) :
+            base(productName, 80, bp.CreationDate, 150)
         {
             BaseProduct = bp;
             CreationDate = BaseProduct.CreationDate;
-        }
-
-        public string Name => "Paper";
-        public void PrintInfo()
-        {
-            Console.WriteLine(Name);
+            ProductName = productName;
         }
         public BaseProduct BaseProduct { get; set; }
-        public double Price => 80;
-        public int ShelLife => 900;
-        public DateTime CreationDate { get; set; }
+        public new DateTime CreationDate { get; set; }
 
     }
 }

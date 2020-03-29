@@ -4,7 +4,7 @@ namespace Homework10
 {
     public interface IThing
     {
-        string Name { get; }
+        string ProductName { get; }
         void PrintInfo();
         string ToString();
         double Price { get; }

@@ -8,7 +8,7 @@ namespace Homework10
     {
         public static void Main(string[] args)
         {
-            List<IThing> products = new List<IThing>
+            var products = new List<IThing>
 
             {
                 new Bread(
@@ -27,15 +27,18 @@ namespace Homework10
                     new BaseProduct(DateTime.Now, new TimeSpan(7,0,0,0)),
                     "Banana",
                     23),
-                new HandCream(new BaseProduct(DateTime.Now, new TimeSpan(20,0,0,0))),
-                new Paper(new BaseProduct(DateTime.Now, new TimeSpan(80,0,0,0)))
+                new HandCream(new BaseProduct(DateTime.Now, new TimeSpan(20,0,0,0)),"Lambre"),
+                new Paper(new BaseProduct(DateTime.Now, new TimeSpan(80,0,0,0)),"AB")
 
             };
 
             foreach (IThing product in products)
             {
-                Console.WriteLine(product.Name + $"\nPrice:  {product.Price}; ShelLife:   { product.ShelLife}\n");
+                Console.WriteLine(product.ProductName + 
+                    $"\nPrice:  {product.Price}; " +
+                    $"ShelLife:   { product.ShelLife}\n");
             }
+            var warehouse = new Warehouse();
 
             TimerCallback tm = new TimerCallback(CheckShelDate);
             Timer timer = new Timer(tm, 0, 0, 1000);
@@ -57,7 +60,7 @@ namespace Homework10
                 else
                 {
                     products.Remove(product);
-                    Console.WriteLine($"Food {product.Name} bad and deleted\n {Delete2}");
+                    Console.WriteLine($"Food {product.ProductName} bad and deleted\n {Delete2}");
                 }
             }
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");

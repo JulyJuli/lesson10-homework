@@ -1,32 +1,30 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Homework10
 {
-    public class Warehouse : IThing
+    public class Warehouse
     {
-        public Warehouse(string productName, double price, DateTime creationDate, int shelfLife)
+        public List<IThing> Products { get; set; }
+
+        public static int warehouseCapacity;
+
+        public Warehouse()
         {
-            ProductName = productName;
-            Price = price;
-            CreationDate = creationDate;
-            ShelLife = shelfLife;
+            Products = new List<IThing>();
         }
-
-        public virtual string Name => "Product";
-
-        public string ProductName { get; set; }
-        public double Price { get; set; }
-        public DateTime CreationDate { get; set; }
-        public int ShelLife { get; set; }
-
-
         public void PrintInfo()
         {
-            Console.WriteLine(ToString());
+            foreach (var item in Products)
+            {
+                Console.WriteLine(item.ToString());
+            }
         }
-        public override string ToString()
+        public void AddProduct(Product product)
         {
-            return $"Name: {ProductName}, Price: {Price}, Shelf life: {ShelLife}";
+            Products.Add(product);
         }
     }
+      
 }
