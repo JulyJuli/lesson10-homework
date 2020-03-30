@@ -1,0 +1,6 @@
+E:\HomeWork_A_LVL\HomeWork10\HW2403\bin\Debug\HW2403.exe.config
+E:\HomeWork_A_LVL\HomeWork10\HW2403\bin\Debug\HW2403.exe
+E:\HomeWork_A_LVL\HomeWork10\HW2403\bin\Debug\HW2403.pdb
+E:\HomeWork_A_LVL\HomeWork10\HW2403\obj\Debug\HW2403.csprojAssemblyReference.cache
+E:\HomeWork_A_LVL\HomeWork10\HW2403\obj\Debug\HW2403.exe
+E:\HomeWork_A_LVL\HomeWork10\HW2403\obj\Debug\HW2403.pdb
